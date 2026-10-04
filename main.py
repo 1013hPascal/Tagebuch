@@ -22,7 +22,10 @@ def _anmelden_oder_einrichten(speicher: Speicher) -> bytes | None:
 
 
 def main() -> int:
-    logs = app_dir() / "logs"
+    import os
+    from pathlib import Path
+    base_path = Path(sys.executable).parent if getattr(sys, 'frozen', False) else Path(__file__).resolve().parent
+    logs = base_path / "logs"
     logs.mkdir(exist_ok=True)
     logging.basicConfig(
         filename=logs / "app.log",
