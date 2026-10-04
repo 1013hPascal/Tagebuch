@@ -1,0 +1,16 @@
+# Konfiguration des Tagebuchs.
+# Leer lassen ("") verwendet die in kern/config.py festgelegten Standardwerte.
+
+db_pfad = ""
+
+ollama_host = "http://127.0.0.1:11434"
+ollama_modell = "gemma4:12b"
+# Kontextfenster fuer Monats-/Jahresuebersichten (Eingabe kann laenger werden).
+ollama_num_ctx = 8192
+
+# Whisper-Modell: "small" (Standard), Alternativen "medium" oder "large-v3-turbo"
+# (genauer, aber langsamer). Laeuft auf der CPU, da auf dem Zielsystem kein CUDA
+# verfuegbar ist.
+whisper_modell = "small"
+whisper_sprache = "de"
+max_aufnahme_sekunden = 600

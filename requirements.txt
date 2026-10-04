@@ -1,0 +1,18 @@
+PySide6>=6.8
+cryptography
+faster-whisper
+sounddevice
+numpy
+httpx
+psutil
+pytest
+pytest-qt
+
+# Hinweis fuer dieses Geraet: faster-whisper installiert "av" (PyAV) mit, obwohl das
+# Tagebuch es nie braucht (Audio kommt immer live vom Mikrofon, nie aus einer Datei).
+# Falls Windows Smart App Control aktiv ist, blockiert es die native av-DLL als nicht
+# "reputable" und "import faster_whisper" schlaegt fehl. Abhilfe: die Datei
+# site-packages/av/__init__.py durch einen leeren Stub ersetzen (Original vorher als
+# __init__.py.original_blocked_by_smart_app_control.bak sichern). Das ist auf diesem
+# Rechner bereits so eingerichtet; nach einem "pip install --force-reinstall av" oder
+# auf einem neuen Rechner mit Smart App Control muesste das wiederholt werden.
