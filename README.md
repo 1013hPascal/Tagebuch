@@ -111,3 +111,15 @@ externen Abhängigkeiten sind für Tests austauschbar).
 - Der Schlüssel existiert nur im Arbeitsspeicher, solange das Programm läuft.
 - Es werden keine Daten an einen Server im Internet gesendet (Ollama und Whisper laufen
   lokal).
+
+## Änderungen
+
+### 1.0.1 (11.10.2026)
+
+- Release-Notizen und Versionierung aktualisiert
+
+### 1.0.0 (04.10.2026)
+
+- Exe-Einrichtung mit KI
+- Exe-Einstellungen
+- Erste Version

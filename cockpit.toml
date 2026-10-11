@@ -22,3 +22,6 @@ hidden_imports = []
 self_test = false
 test_seconds = 10
 beside = []
+
+[readme.managed."README.md"]
+changes = "c473c44306b7"
